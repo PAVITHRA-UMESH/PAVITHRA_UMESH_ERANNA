@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COFFEE SHOP WEBSITE</title>
+        <link href="../Images/CoffeeIcon.jpg" rel="icon">
+        <meta charset="UTF=8">
+        <meta name="description" content="Brief description">
+        <meta name="keywords" content="important words">
+        <meta name="author" content="author name">
+        <meta name="viewport" content="width=device-width,initialscale=1">
+        <link href="../CSS/Style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+            <div class="menu">
+            <div class="logo">
+            <a href="#">COFFEE SHOP</a>
+            </div>
+            <ul>
+               <li><a href="../HTML/index.html">HOME</a></li>
+               <li><a href="../HTML/About.html">ABOUT</a></li>
+               <li><a href="../HTML/Menu.html">MENU</a></li>
+               <li><a href="../HTML/Review.html">REVIEW</a></li>
+               <li><a href="../HTML/GetInTouch.html">CONTACT</a></li>
+               <li><a href="../HTML/Blogs.html">BLOGS</a></li>
+           </ul>
+           </div>
+           </nav>
+        </header>
+    <section class="contact" id="contact">
+    <h1>GET <span>IN</span> TOUCH</h1>
+     <div class="hero">
+    <form action="../HTML/Contact.html" name="Form" onsubmit="return validateform()">
+        <table border="5">
+            <div class="input-group">
+                <tr><td><label class="label1" for="fname">FIRST NAME</label></td>
+                    <td><input type="text" id="fname" onblur="validate1()"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="error1"></span></td></tr>
+            </div> 
+            <div class="input-group">  
+            <tr><td><label class="label1" id="l2" for="lname" >LAST NAME</label></td>
+                <td><input type="text" id="lname" onblur="validate2()"> </td>
+            </tr>
+            <tr><td></td><td><span class="error" id="error2"></span></td></tr>
+            </div>
+            <div class="input-group">
+            <tr><td><label class="label1" id="l3" for="mobileno">MOBILE NUMBER</label></td>
+                <td><input type="text" id="mobileno" onblur="validate3()"></td>
+            </tr>
+            <tr><td></td><td><span class="error" id="error3"></span></td></tr>
+            </div>
+            <div class="input-group">
+            <tr><td><label class="label1" id="l4" for="email">EMAIL ID</label></td>
+                <td><input type="text" id="email" onblur="validate4()"></td>
+            </tr>
+            <tr><td></td><td><span class="error" id="error4"></span></td></tr>
+            </div>
+            <div class="input-group">
+            <tr><td><label class="label1" id="l5" for="message">MESSAGE</label></td>
+                <td><textarea id="message" onblur="validate5()"></textarea></td>
+            </tr>
+            <tr><td></td><td><span class="error" id="error5"></span></td></tr>
+            </div>
+            <tr><td colspan="2">
+            <input id="btn" type="submit"value="CONTACT NOW">
+            </td></tr>
+        </table>
+    </form>
+    </div> 
+<section class="footer1">
+    <div class="credit">
+        <p>Created By <span>PAVITHRA U</span> | All Rights Reserved</p>
+    </div>
+</section>
+<script src="../JAVASCRIPT/MyJavascript.js"></script>
+</body>
+</html>
