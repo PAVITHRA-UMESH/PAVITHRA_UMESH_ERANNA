@@ -111,7 +111,10 @@ function validateform(){
     let v4=validate4();
     let v5=validate5();
 
-    return (v1&&v2&&v3&&v4&&v5);
+    if(v1 && v2 && v3 && v4 && v5)
+     return true;
+    else
+     return false;
 }
  
 
