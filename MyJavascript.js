@@ -6,14 +6,17 @@ function validate1(){
     if(fname == ""){
         spanNode1.innerHTML = "Required!";
         fnameNode.style.border = "5px solid red";
+        return false;
     }
     else if(fname.includes(" ")){
         spanNode1.innerHTML = "Space Not Allowed!";
         fnameNode.style.border = "5px solid red";
+        return false;
     }
     else{
         
         fnameNode.style.border = "5px solid green";
+        return true;
    
     }
 }
@@ -26,14 +29,17 @@ function validate2(){
     if(lname == ""){
         spanNode2.innerHTML = "Required!!!";
         lnameNode.style.border = "5px solid red";
+        return false;
     }
     else if(lname.includes(" ")){
         spanNode2.innerHTML = "Space not allowed!!!";
         lnameNode.style.border = "5px solid red";
+        return false;
     }
     else{
         
         lnameNode.style.border = "5px solid green";
+        return true;
     }
 }
 
@@ -50,13 +56,16 @@ function validate3(){
   if(mobileno== ""){
         spanNode3.innerHTML = "Required!!!";
         mobNode.style.border = "5px solid red";
+        return false;
     }
    else if (valid != true ){
     spanNode3.innerHTML = "Invalid Number!";
     mobNode.style.border = "5px solid red";
+       return false;
    }
    else{
     mobNode.style.border = "5px solid green";
+       return true;
    }
 }
 
@@ -94,27 +103,30 @@ function validate5(){
     if(message == ""){
         spanNode5.innerHTML = "Required!!!";
         messageNode.style.border = "5px solid red";
+        return false;
     }
     else if(message.length<10 || message.length>50){
         spanNode5.innerHTML = "Invalid Message Length!!!";
         lnameNode.style.border = "5px solid red";
+        return false;
     }
     else{
         messageNode.style.border = "5px solid green";
+        return true;
     }
 }
 
-function validateform(){
+   function validateform()
+    {
     let v1=validate1();
     let v2=validate2();
     let v3=validate3();
     let v4=validate4();
     let v5=validate5();
 
-    if(v1 && v2 && v3 && v4 && v5)
-     return true;
-    else
-     return false;
-}
+    if(v1 && v2 && v3 && v4 && v5) return true;
+    else return false;
+  }
+ 
  
 
